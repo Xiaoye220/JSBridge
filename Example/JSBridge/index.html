@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Title</title>
+    <style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .buttonWrapper {
+        width: 100%;
+        height: 55%;
+        overflow-scrolling: touch;
+        overflow-y: scroll;
+    }
+
+    button {
+        display: block;
+        background: #b4282d;
+        margin: 20px auto;
+        color: white;
+        width: 60%;
+        height: 44px;
+        border-radius: 5px;
+        font-size: 1.2rem;
+    }
+
+    .text-area {
+        box-sizing: border-box;
+        padding: 10px;
+        width: 100%;
+        height: 45%;
+        overflow-scrolling: touch;
+        overflow-y: scroll;
+        color: #666666;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="buttonWrapper">
+        <button onclick="callWithoutData()">js call without data</button>
+        <button onclick="callWithString()">js call with string</button>
+        <button onclick="callWithObject()">js call with object</button>
+        <button onclick="callWithArray()">js call with array</button>
+        <button onclick="callWithCallback()">js call with callback</button>
+    </div>
+    <div id="textArea" class="text-area">message:</div>
+    <script>
+    function log(message) {
+        let textArea = document.getElementById("textArea");
+        textArea.innerText = textArea.innerText + "\n" + message;
+        textArea.scrollTop = textArea.scrollHeight;
+    }
+
+    function callWithoutData() {
+        window.bridge.call("swiftHandler");
+    }
+
+    function callWithString() {
+        window.bridge.call("swiftHandler", "hello world from js");
+    }
+
+    function callWithObject() {
+        window.bridge.call("swiftHandler", { "key": { "key": "value" }, "array": ["value1", "value2"] });
+    }
+
+    function callWithArray() {
+        window.bridge.call("swiftHandler", ["value1", "value2"]);
+    }
+
+    function callWithCallback() {
+        window.bridge.call("swiftHandler", "hello world from js", function(responseData) {
+            log(responseData.toString())
+        });
+    }
+
+    window.bridge.register("jsHandler", function(data, callback) {
+        log("[swift call js] - data: " + JSON.stringify(data));
+        let responseData = "I'm js response data";
+        callback("[response from js] - response data: " + responseData);
+    });
+    </script>
+</body>
+
+</html>

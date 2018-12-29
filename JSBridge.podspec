@@ -32,9 +32,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'JSBridge/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'JSBridge' => ['JSBridge/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'JSBridge' => ['JSBridge/Assets/*']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

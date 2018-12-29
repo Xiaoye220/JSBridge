@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		19DECC65934791B1328CEC38 /* Pods_JSBridge_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822781616F67A2C12441FF34 /* Pods_JSBridge_Tests.framework */; };
+		2F0CA26821D5FF2100EC11F4 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 2F0CA26721D5FF2100EC11F4 /* index.html */; };
 		514AEDEFFCF3A60A9E5CE1AF /* Pods_JSBridge_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF8E65B9FF39C3F4B863D9B /* Pods_JSBridge_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -29,8 +30,9 @@
 
 /* Begin PBXFileReference section */
 		1AF8E65B9FF39C3F4B863D9B /* Pods_JSBridge_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSBridge_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F0CA26721D5FF2100EC11F4 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		39B89A939358DFEF808B5F41 /* Pods-JSBridge_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSBridge_Example.release.xcconfig"; path = "Target Support Files/Pods-JSBridge_Example/Pods-JSBridge_Example.release.xcconfig"; sourceTree = "<group>"; };
-		51951248BF2CEFA20DC50B01 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		51951248BF2CEFA20DC50B01 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* JSBridge_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSBridge_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,11 +44,11 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		822781616F67A2C12441FF34 /* Pods_JSBridge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSBridge_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		92F40C40D1187E8E90146EA0 /* JSBridge.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JSBridge.podspec; path = ../JSBridge.podspec; sourceTree = "<group>"; };
+		92F40C40D1187E8E90146EA0 /* JSBridge.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JSBridge.podspec; path = ../JSBridge.podspec; sourceTree = "<group>"; };
 		930217ED3315798A16199670 /* Pods-JSBridge_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSBridge_Example.debug.xcconfig"; path = "Target Support Files/Pods-JSBridge_Example/Pods-JSBridge_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		976CF3AFE622A7691423064D /* Pods-JSBridge_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSBridge_Tests.release.xcconfig"; path = "Target Support Files/Pods-JSBridge_Tests/Pods-JSBridge_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DBEACD0957A24E89729CFCDB /* Pods-JSBridge_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSBridge_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JSBridge_Tests/Pods-JSBridge_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E02DD45C8944B867F69EA064 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E02DD45C8944B867F69EA064 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +79,6 @@
 				DBEACD0957A24E89729CFCDB /* Pods-JSBridge_Tests.debug.xcconfig */,
 				976CF3AFE622A7691423064D /* Pods-JSBridge_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -119,6 +120,7 @@
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				2F0CA26721D5FF2100EC11F4 /* index.html */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for JSBridge";
@@ -247,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				2F0CA26821D5FF2100EC11F4 /* index.html in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -423,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -469,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -483,6 +486,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JSBridge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -498,6 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JSBridge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
