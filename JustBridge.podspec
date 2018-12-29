@@ -7,8 +7,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'JSBridge'
-  s.version          = '0.1.0'
+  s.name             = 'JustBridge'
+  s.version          = '0.0.1'
   s.summary          = 'A short description of JSBridge.'
 
 # This description is used to generate tags and improve search results.

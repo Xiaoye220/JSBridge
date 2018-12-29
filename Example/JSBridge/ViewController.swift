@@ -8,7 +8,7 @@
 
 import UIKit
 import WebKit
-import JSBridge
+import JustBridge
 
 let topHeight = UIApplication.shared.statusBarFrame.height + 44
 let screenHeight = UIScreen.main.bounds.height
