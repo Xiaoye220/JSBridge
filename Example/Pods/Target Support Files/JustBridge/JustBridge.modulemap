@@ -1,0 +1,6 @@
+framework module JustBridge {
+  umbrella header "JustBridge-umbrella.h"
+
+  export *
+  module * { export * }
+}

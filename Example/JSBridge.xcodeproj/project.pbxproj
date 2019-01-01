@@ -21,6 +21,7 @@
 		2F0CA26721D5FF2100EC11F4 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		39B89A939358DFEF808B5F41 /* Pods-JSBridge_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSBridge_Example.release.xcconfig"; path = "Target Support Files/Pods-JSBridge_Example/Pods-JSBridge_Example.release.xcconfig"; sourceTree = "<group>"; };
 		51951248BF2CEFA20DC50B01 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5B993A1C6A4E65E445CE0446 /* Pods-JSBridge_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSBridge_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSBridge_Example/Pods-JSBridge_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* JSBridge_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSBridge_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +33,7 @@
 		92F40C40D1187E8E90146EA0 /* JSBridge.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JSBridge.podspec; path = ../JSBridge.podspec; sourceTree = "<group>"; };
 		930217ED3315798A16199670 /* Pods-JSBridge_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSBridge_Example.debug.xcconfig"; path = "Target Support Files/Pods-JSBridge_Example/Pods-JSBridge_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		976CF3AFE622A7691423064D /* Pods-JSBridge_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSBridge_Tests.release.xcconfig"; path = "Target Support Files/Pods-JSBridge_Tests/Pods-JSBridge_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D534879756498FCE36196784 /* Pods-JSBridge_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSBridge_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSBridge_Example/Pods-JSBridge_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DBEACD0957A24E89729CFCDB /* Pods-JSBridge_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSBridge_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JSBridge_Tests/Pods-JSBridge_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E02DD45C8944B867F69EA064 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,6 +57,8 @@
 				39B89A939358DFEF808B5F41 /* Pods-JSBridge_Example.release.xcconfig */,
 				DBEACD0957A24E89729CFCDB /* Pods-JSBridge_Tests.debug.xcconfig */,
 				976CF3AFE622A7691423064D /* Pods-JSBridge_Tests.release.xcconfig */,
+				5B993A1C6A4E65E445CE0446 /* Pods-JSBridge_Example.debug.xcconfig */,
+				D534879756498FCE36196784 /* Pods-JSBridge_Example.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -221,7 +225,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JSBridge_Example/Pods-JSBridge_Example-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-JSBridge_Example/Pods-JSBridge_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JustBridge/JustBridge.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -232,7 +236,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JSBridge_Example/Pods-JSBridge_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSBridge_Example/Pods-JSBridge_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
