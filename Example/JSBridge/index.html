@@ -18,7 +18,7 @@
 
     .buttonWrapper {
         width: 100%;
-        height: 55%;
+        height: 60%;
         overflow-scrolling: touch;
         overflow-y: scroll;
     }
@@ -38,7 +38,7 @@
         box-sizing: border-box;
         padding: 10px;
         width: 100%;
-        height: 45%;
+        height: 40%;
         overflow-scrolling: touch;
         overflow-y: scroll;
         color: #666666;
@@ -53,6 +53,7 @@
         <button onclick="callWithObject()">js call with object</button>
         <button onclick="callWithArray()">js call with array</button>
         <button onclick="callWithCallback()">js call with callback</button>
+        <button onclick="callNotExistHandler()">js call not exist handler</button>
     </div>
     <div id="textArea" class="text-area">message:</div>
     <script>
@@ -81,6 +82,12 @@
     function callWithCallback() {
         window.bridge.call("swiftHandler", "hello world from js", function(responseData) {
             log(responseData.toString())
+        });
+    }
+    
+    function callNotExistHandler() {
+        window.bridge.call("xxx", "hello world from js", null, function(errorMessage) {
+            log("error: " + errorMessage)
         });
     }
 

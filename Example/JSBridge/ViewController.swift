@@ -17,7 +17,7 @@ let screenWidth = UIScreen.main.bounds.width
 class ViewController: UIViewController {
     
     var webView: WKWebView!
-    var bridge: JSBridge!
+    var bridge: JustBridge!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         webView.scrollView.isScrollEnabled = false
         view.addSubview(webView)
         
-        bridge = JSBridge(with: webView)
+        bridge = JustBridge(with: webView)
         bridge.register("swiftHandler") { (data, callback) in
             print("[js call swift] - data: \(data ?? "nil")\n")
             let responseData = "I'm swift response data"
@@ -50,11 +50,17 @@ class ViewController: UIViewController {
     
     func bridgeCall(_ data: Any?, withCallBack: Bool) {
         if withCallBack {
-            bridge.call("jsHandler", data: data) { responseData in
+            bridge.call("jsHandler", data: data, callback: { responseData in
                 print(responseData ?? "have no response data")
-            }
+            }, errorCallback: nil)
         } else {
-            bridge.call("jsHandler", data: data, callback: nil)
+            bridge.call("jsHandler", data: data)
+        }
+    }
+    
+    func bridgeCallNotExistHandler() {
+        bridge.call("xxx", data: nil, callback: nil) { error in
+            print("error: \(error)")
         }
     }
     
@@ -75,12 +81,16 @@ class ViewController: UIViewController {
         let alertAction_5 = UIAlertAction(title: "swift call with callback", style: .default) { [unowned self] _ in
             self.bridgeCall("hello world from swift", withCallBack: true)
         }
+        let alertAction_6 = UIAlertAction(title: "swift call not exist handler", style: .default) { [unowned self] _ in
+            self.bridgeCallNotExistHandler()
+        }
         let cancelAction = UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil)
         alertVC.addAction(alertAction_1)
         alertVC.addAction(alertAction_2)
         alertVC.addAction(alertAction_3)
         alertVC.addAction(alertAction_4)
         alertVC.addAction(alertAction_5)
+        alertVC.addAction(alertAction_6)
         alertVC.addAction(cancelAction)
         return alertVC
     }()

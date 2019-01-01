@@ -10,7 +10,7 @@
 		23A074C682ABB0177D9D7B24F20962A3 /* JustBridge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7626060B4C2D5F82E60F9ADD3EE2F9FB /* JustBridge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30712EDB7B64124BA20097EF11981F5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		349F19A3D767DE787A9438242AEBFD42 /* JustBridge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9CD7B0553D2CE4CADF2B3BDF1E100D /* JustBridge-dummy.m */; };
-		535BE9838D7275A13FF6651F86898DAC /* JSBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535DCEA2F1228FB814B1FE5575E0AD2E /* JSBridge.swift */; };
+		535BE9838D7275A13FF6651F86898DAC /* JustBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535DCEA2F1228FB814B1FE5575E0AD2E /* JustBridge.swift */; };
 		67C087BF583301FA053CE8F9D53C0740 /* Pods-JSBridge_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C760866E592DE582F3FD4E2673D947 /* Pods-JSBridge_Example-dummy.m */; };
 		7B09D4B2F38D261AAAC18A2A12B43B3B /* bridge.js in Resources */ = {isa = PBXBuildFile; fileRef = DA7CA090D32539256DDFC91AFB761472 /* bridge.js */; };
 		9864B3E6A0E810AE88C0642DBB687F53 /* JSBridge.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C3CCE06D7D7B25EF3812F6829373F25F /* JSBridge.bundle */; };
@@ -41,7 +41,7 @@
 		20B665EC4901CD463887A7C81128A4A2 /* Pods-JSBridge_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JSBridge_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		29FD105C54358E2C1E4BC214C0B0ACAE /* JustBridge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JustBridge.modulemap; sourceTree = "<group>"; };
 		5127033D64D7391045D314418AB91DB8 /* Pods-JSBridge_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JSBridge_Example-frameworks.sh"; sourceTree = "<group>"; };
-		535DCEA2F1228FB814B1FE5575E0AD2E /* JSBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSBridge.swift; path = JSBridge/Classes/JSBridge.swift; sourceTree = "<group>"; };
+		535DCEA2F1228FB814B1FE5575E0AD2E /* JustBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JustBridge.swift; path = JSBridge/Classes/JustBridge.swift; sourceTree = "<group>"; };
 		550CA7B624C3AE76B5A0921D7BFFC8CE /* JustBridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JustBridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6FACC3BD1425775B5256825E26039211 /* ResourceBundle-JSBridge-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-JSBridge-Info.plist"; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 		543965291CADC108C745F2C2E5DA76E4 /* JustBridge */ = {
 			isa = PBXGroup;
 			children = (
-				535DCEA2F1228FB814B1FE5575E0AD2E /* JSBridge.swift */,
+				535DCEA2F1228FB814B1FE5575E0AD2E /* JustBridge.swift */,
 				22A64DF70A0FE10F141CA6A6E3B587BA /* Pod */,
 				17C5F07233536909E79529DAA176DA4D /* Resources */,
 				D01D9E24F588DF3411D3D32944D5E444 /* Support Files */,
@@ -351,7 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				535BE9838D7275A13FF6651F86898DAC /* JSBridge.swift in Sources */,
+				535BE9838D7275A13FF6651F86898DAC /* JustBridge.swift in Sources */,
 				349F19A3D767DE787A9438242AEBFD42 /* JustBridge-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
