@@ -14,7 +14,7 @@ public class JustBridge: NSObject {
     public typealias BridgeData = Any?
     
     /// the key for messages between Swift and JavaScript
-    private struct MessageKey {
+    fileprivate struct MessageKey {
         static let name = "name"
         static let data = "data"
         static let swiftCallbackId = "swiftCallbackId"
@@ -40,14 +40,14 @@ public class JustBridge: NSObject {
     public typealias Callback = (_ responseData: BridgeData) -> Void
     public typealias Handler = (_ data: BridgeData, _ callback: Callback) -> Void
     
-    private var handlers: [String: Handler] = [:]
-    private var callbacks: [String: Callback] = [:]
-    private var errorCallbacks: [String: ErrorCallback] = [:]
+    fileprivate var handlers: [String: Handler] = [:]
+    fileprivate var callbacks: [String: Callback] = [:]
+    fileprivate var errorCallbacks: [String: ErrorCallback] = [:]
     
     /// unique id for callback
-    private var callbackId = 0
+    fileprivate var callbackId = 0
     
-    private var webview: WKWebView
+    fileprivate var webview: WKWebView
     
     public init(with webView: WKWebView) {
         self.webview = webView
@@ -93,12 +93,12 @@ public class JustBridge: NSObject {
 
 extension JustBridge {
     
-    private func injectBridgeJS() {
+    fileprivate func injectBridgeJS() {
         let script = WKUserScript(source: JustBridge.bridge_js, injectionTime: .atDocumentStart, forMainFrameOnly: true)
         self.webview.configuration.userContentController.addUserScript(script)
     }
     
-    private func postMessage(_ name: String, data: BridgeData, swiftCallbackId: String? = nil, jsCallbackId: String? = nil, error: String? = nil) {
+    fileprivate func postMessage(_ name: String, data: BridgeData, swiftCallbackId: String? = nil, jsCallbackId: String? = nil, error: String? = nil) {
         var message = [String: Any]()
         message[MessageKey.name] = name
         message[MessageKey.data] = data
