@@ -11,7 +11,7 @@ An iOS bridge for sending messages between Swift and JavaScript in WKWebView
 
 ## ScreenShot
 
-![Screenshots](https://github.com/Xiaoye220/EmptyDataSet-Swift/blob/master/JSBridge/ScreenShot/ScreenShot.gif)
+![Screenshots](https://github.com/Xiaoye220/JSBridge/blob/master/ScreenShot/ScreenShot.gif)
 
 ## CocoaPods
 
