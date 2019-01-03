@@ -52,7 +52,9 @@ class ViewController: UIViewController {
         if withCallBack {
             bridge.call("jsHandler", data: data, callback: { responseData in
                 print(responseData ?? "have no response data")
-            }, errorCallback: nil)
+            }, errorCallback: { errorMessage in
+                print(errorMessage)
+            })
         } else {
             bridge.call("jsHandler", data: data)
         }

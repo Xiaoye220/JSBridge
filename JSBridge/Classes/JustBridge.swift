@@ -36,7 +36,7 @@ public class JustBridge: NSObject {
         return js
     }()
     
-    public typealias ErrorCallback = (_ error: BridgeError) -> Void
+    public typealias ErrorCallback = (_ errorMessage: BridgeError) -> Void
     public typealias Callback = (_ responseData: BridgeData) -> Void
     public typealias Handler = (_ data: BridgeData, _ callback: Callback) -> Void
     
