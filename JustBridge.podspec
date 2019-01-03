@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'JustBridge'
   s.version          = '4.2.0'
-  s.summary          = 'A short description of JustBridge.'
+  s.summary          = 'An iOS bridge for sending messages between Swift and JavaScript in WKWebView.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                      An iOS bridge for sending messages between Swift and JavaScript in WKWebView
                        DESC
 
   s.homepage         = 'https://github.com/Xiaoye220/JSBridge'
