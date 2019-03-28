@@ -3,7 +3,7 @@
 ![pod](https://img.shields.io/badge/pod-4.2.0-brightgreen.svg)
 ![iOS](https://img.shields.io/badge/iOS-8.0-green.svg)
 ![lisence](https://img.shields.io/badge/license-MIT-orange.svg)
-![swift](https://img.shields.io/badge/swift-4.2-red.svg)
+![swift](https://img.shields.io/badge/swift-5.0-red.svg)
 
 
 
