@@ -51,7 +51,7 @@ bridge = JustBridge(with: webView)
 ```swift
 bridge.register("swiftHandler") { (data, callback) in
     print("[js call swift] - data: \(data ?? "nil")\n")
-	callback("[response from swift] - response data: I'm swift response data")
+    callback("[response from swift] - response data: I'm swift response data")
 }
 
 bridge.call("jsHandler", data: data, callback: { responseData in
