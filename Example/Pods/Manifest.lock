@@ -1,5 +1,5 @@
 PODS:
-  - JustBridge (0.0.1)
+  - JustBridge (4.2.0)
 
 DEPENDENCIES:
   - JustBridge (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JustBridge: 81c090b6f3be54eed8401b9d36fa2c3847876137
+  JustBridge: 8bfee3a0a1fbe0570931975908aedad9688db75d
 
 PODFILE CHECKSUM: 198ab4a1a8730dc89c5ed30eb914d6e721a908dd
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.12.0

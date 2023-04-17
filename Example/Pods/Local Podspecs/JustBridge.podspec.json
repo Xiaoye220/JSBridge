@@ -1,8 +1,8 @@
 {
   "name": "JustBridge",
-  "version": "0.0.1",
-  "summary": "A short description of JSBridge.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "4.2.0",
+  "summary": "An iOS bridge for sending messages between Swift and JavaScript in WKWebView.",
+  "description": "An iOS bridge for sending messages between Swift and JavaScript in WKWebView",
   "homepage": "https://github.com/Xiaoye220/JSBridge",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Xiaoye220/JSBridge.git",
-    "tag": "0.0.1"
+    "tag": "4.2.0"
   },
   "platforms": {
     "ios": "8.0"
